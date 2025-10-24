@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="wclassth=device-wclassth, initial-scale=1.0">
+    <title>Mouse Over</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        html,body{
+            width: 100%;
+            height: 100%;
+            background-color: #222;
+            display: flex;
+            justify-content: space-between;
+        }
+        body{
+            overflow: hidden;
+        }
+        .main{
+            position: absolute;
+            transition: all cubic-bezier(0.19, 1, 0.22, 1), .2s;
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+
+    </div>
+   
+    <script src="./script.js"></script>
+</body>
+</html>
