@@ -3,11 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+        <title>Tailwind Toast Demo</title>
+        <!-- Tailwind CDN -->
+        <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
- 
-    <h1>Hello</h1>
-<script src="./script.js"></script>    
+</body>
+
+<div class="min-h-screen bg-gray-50 flex items-center justify-center p-6">
+    <div class="w-full max-w-xl">
+        <h1 class="text-2xl font-semibold mb-4">Tailwind Toaster Demo</h1>
+
+        <div class="space-x-2 mb-6">
+            <button id="successBtn" class="px-4 py-2 bg-emerald-500 text-white rounded hover:bg-emerald-600">Show Success</button>
+            <button id="infoBtn" class="px-4 py-2 bg-sky-500 text-white rounded hover:bg-sky-600">Show Info</button>
+            <button id="errorBtn" class="px-4 py-2 bg-rose-500 text-white rounded hover:bg-rose-600">Show Error</button>
+        </div>
+
+        <p class="text-gray-600">This page demonstrates a compact, accessible toaster notification system built with Tailwind CSS and vanilla JS.</p>
+    </div>
+</div>
+
+<!-- Toast container (top-right) -->
+<div id="toast-container" class="fixed top-4 right-4 flex flex-col gap-3 z-50 pointer-events-none" aria-live="polite" aria-atomic="false"></div>
+
+<script src="./script.js"></script>
 </body>
 </html>
