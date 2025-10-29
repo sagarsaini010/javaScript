@@ -1,6 +1,8 @@
 //map-learning
 //1
-let findsquare = function () {
+
+
+   let findsquare = function () {
   let arr = [1, 2, 3, 4, 5];
   let newArr = arr.map((elem) => {
     return elem ** 2;
@@ -74,5 +76,3 @@ let appendIndex = function(){
     let newArr = arr.map((elem,indx)=> elem +'-'+ indx)
     console.log(newArr)
 }
-
-appendIndex()
